@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="./iconfinder-icon.ico" type="image/x-icon" /> 
+        <title>Weather For You </title>
+        <link rel="stylesheet" href="weather.css" type="text/css" />
+        <link rel="stylesheet" href="weather.min.css" type="text/css" />
+    </head>
+<body>
+    <script type="text/javascript" src="weather.js"></script>
+    
+     <!-- Navigation -->
+     <nav>
+         <a href = https://www.theweathernetwork.com/ca target="_blank">Our Sponsor</a>
+         <a href = https://hackwestern.com/ target="_blank">Support Team</a>
+     </nav>
+
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Weather For You</h1>
+                <p>Cuztomize the weather at the moment just for you</p>
+                <input type="text" id="city" placeholder="City"/><br/><br/><br><br>
+                <a href="#" class="btn btn-primary btn-lg" type = "button"
+                Onclick="getTemperature(); getWindSpeed(); getFeels(); getSunrise(); getSunset(); getHumidity()">Weather It Up</a>
+            </div>
+        </div>
+    </header>
+    <div class = content>
+    <div class = "temperature">
+        <div class = "current">
+            <h3>Current Temperature</h3>
+        </div>
+        <div class = "feel">
+            <h3>Feels Like</h3>
+        </div>
+        <div class = "wind">
+            <h3>Wind Speed</h3>
+        </div>
+        <div class = "humidity">
+            <h3>Humidity</h3>
+        </div>
+        <div class = "rise">
+            <h3>Sun Rise</h3>
+        </div>
+        <div class = "set">
+            <h3>Sun Set</h3>
+        </div>
+    </div>
+    
+    <br/><br/>
+    <div class = "showInfo">
+        
+            <h3 id = "temp">&#9925</h3>
+            <h3 id = "feels">&#9924</h3>
+            <h3 id = "wind">&#9928</h3>
+            <h3 id = "humidity">&#9748</h3>
+            <h3 id = "sunrise">&#9889</h3>
+            <h3 id = "sunset">&#9975</h3>
+        
+    </div>
+</div>
+   <br><br><br>
+<div class = "bt">
+    <a href=# type = "button" class="button button-primary button-lg"
+                        Onclick = "getClothing(); setSong()"> Essentials</a>
+</div>
+  
+
+<div class = "clothing">
+    <br>
+    <br><br><br>
+<div class="sidebar">
+  <h3>Weather Playlist</h3>
+  <br><br>
+  <a id = "song1" href="#" target = "_blank">Song 1</a><br><br><br><br><br>
+  <a id = "song2" href="#" target = "_blank">Song 2</a><br><br><br><br><br>
+  <a id = "song3" href="#" target = "_blank">Song 3</a><br><br><br><br><br>
+</div>
+ 
+   
+       <img id = "displayClothing"></img>
+    
+   
+       <img id = "otherthing" ></img>
+   \
+   <!--<div class = "music">-->
+   <!--    <h2 id = "playlist">Playlist</h2>-->
+   <!--</div>-->
+   
+       <img id = "more"></img>
+   
+   
+       <img id = "activity"></img>
+  
+   
+</div>
+    
+    
+
+    
+</body>
+    
+</html>
